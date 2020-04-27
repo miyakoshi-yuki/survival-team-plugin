@@ -1,4 +1,4 @@
-survival-team-plugin WordPress Plugin, 2007-2020 Yuki Miyakoshi
+survival-team-plugin WordPress Plugin, 2020 Yuki Miyakoshi
 survival-team-plugin is distributed under the terms of the GNU GPL
 
 This program is free software; you can redistribute it and/or modify
