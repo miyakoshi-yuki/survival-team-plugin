@@ -1,0 +1,153 @@
+/* ##################################
+    日程追加
+  ################################## */
+
+#sti_1{
+  display: flex;
+  position: relative;
+}
+
+#sti_submit{
+  position: absolute;
+  bottom: 0;
+}
+
+#field{
+  width: 298px;
+}
+
+input{
+  max-width: none!important;
+}
+
+.scroll {
+  width: 95%;
+}
+
+.control-group{
+  margin-right: 10px;
+}
+/* ##################################
+    モーダル
+  ################################## */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin: 0 auto;
+    padding: 40px;
+}
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    left:-20px;
+    width: 100%;
+}
+.modal__content{
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-70%,-50%);
+    width: 60%;
+}
+
+#sti_modal_submit{
+  position: static;
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+}
+
+.modal-control-group{
+  margin-right: 10px;
+}
+
+/* ##################################
+    サバゲー日程
+  ################################## */
+th{
+  white-space: nowrap;
+}
+
+td{
+  border: 0.1px solid #ccc;
+}
+
+.scroll{
+  width: 95%;
+}
+
+
+/* ##################################
+    レスポンシブ
+  ################################## */
+
+@media screen and (max-width: 782px) {
+
+  /* ##################################
+      日程追加
+  ################################## */
+
+  #sti_1{
+    display: block;
+  }
+
+  #day,#field,#sti_submit{
+    width: 95%;
+  }
+
+  #fee{
+    width: 91%;
+  }
+
+  #sti_submit{
+    margin-top: 16px;
+    position: static;
+  }
+
+  /* ##################################
+      隊員状況(レスポンシブ)
+    ################################## */
+
+
+  .scroll {
+    overflow-x: auto;
+  }
+  .wp-list-table {
+    min-width: 640px;
+    margin: 0 10px 50px;
+  }
+  .wp-list-table td {
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+  }
+  .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) {
+    display: table-cell;
+  }
+
+
+  /* ##################################
+      モーダル(レスポンシブ)
+  ################################## */
+
+  #modal_day,#modal_field,#modal_fee,#sti_modal_submit{
+    width: 100%;
+  }
+
+  #sti_modal_submit{
+    margin-top: 16px;
+  }
+
+}

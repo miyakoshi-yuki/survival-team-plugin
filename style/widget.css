@@ -1,0 +1,116 @@
+/* ##################################
+    男女比
+  ################################## */
+
+.ui-widget-header {
+  border: 1px solid #aaa;
+  background: blue url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;
+  color: #222;
+  font-weight: bold;
+}
+
+.ui-widget-content {
+  border: 1px solid #aaa;
+  background: pink url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+  color: #222;
+}
+
+/* ##################################
+    活動予定
+  ################################## */
+.page{
+  background: #fff;
+  width: 95%;
+  min-height: 300px;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top,  #fffff 0%, #e5e5e5 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+  background: linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+@font-face {
+  font-family: kiloji_b;
+  src: url("../fonts/kiloji_b.subset.woff2") format("woff2"),/*For Modern browser*/
+  url("../fonts/kiloji_b.subset.ttf") format("opentype"),/*For iOS Android*/
+  url("../fonts/kiloji_b.subset.eot") format("eot");/*For IE*/
+}
+#kiloji_b {
+  font-family: kiloji_b;
+}
+
+.a{
+  font-size: 16px !important;
+}
+
+.space{
+  height: 90px;
+}
+
+.page p {
+  margin-bottom: 0px !important;
+  margin-left: 20px !important;
+  color: #4b4b4b;
+}
+
+.foldtl {
+  position: relative;
+  -webkit-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  -moz-box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.8);
+}
+
+.foldtl:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0px;
+  height: 0px;
+  border-bottom: 70px solid #eee;
+  border-left: 70px solid transparent;
+  -webkit-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+}
+
+.foldtl:after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 0px;
+  height: 0px;
+  border-top: 69px solid transparent;
+  border-right: 69px solid transparent;
+}
+
+th{
+  font-size: 13px;
+}
+
+
+/*slick setting*/
+#sti_slick .slick-arrow,#sti_slick .slick-dots{
+  display: none!important;
+}
+
+
+/* ##################################
+    レスポンシブ
+  ################################## */
+
+@media screen and (max-width: 782px) {
+
+  /* ##################################
+      隊員追加(レスポンシブ)
+    ################################## */
+
+}

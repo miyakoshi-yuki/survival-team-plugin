@@ -1,0 +1,406 @@
+/* ##################################
+    隊員追加
+  ################################## */
+
+#name{
+  width:100%;
+}
+
+#sti_1,#sti_2,#sti_3{
+  display: flex;
+  width: 95%;
+}
+
+#sti_2{
+  padding-bottom: 10px;
+  border-bottom: 1px dashed black;
+}
+
+#sti_3{
+  padding-top: 10px;
+}
+
+#posion,#posion_add,#posion_remove{
+  width: 198px;
+}
+
+.control-group{
+  margin-right: 10px;
+}
+
+#control-group-1{
+  width:95%;
+}
+
+button, .button{
+  margin-bottom: 1px !important;
+}
+
+#control-group-6{
+  width: 60%;
+}
+
+#control-group-7{
+}
+
+
+#coment{
+  max-width: none;
+  width: 100%;
+}
+
+#sti_submit{
+  width: 15vw;
+  height: 100%;
+}
+textarea, input[type=text] {
+    max-width: none!important;
+}
+#modal_posion,#modal_age,#modal_sex,#modal_image_button{
+  width:100%;
+}
+#sti_2 #comment{
+  width: 100%;
+}
+
+/* ##################################
+    モーダル
+  ################################## */
+
+#sti_0{
+  display: flex;
+}
+
+#modal_name{
+  width:100%;
+}
+
+#modal_image_button{
+  padding-right: 0;
+  width: 105%;
+  text-align: center;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin: 0 auto;
+    padding: 40px;
+}
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    left:-20px;
+    width: 100%;
+}
+.modal__content{
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-70%,-50%);
+    width: 60%;
+}
+
+#sti_modal_submit{
+  position: static;
+  margin-top: 10px;
+  margin-bottom: 10px !important;
+}
+
+.modal-control-group{
+  margin-right: 10px;
+}
+
+
+/* ##################################
+    隊員状況
+  ################################## */
+
+th{
+  white-space: nowrap;
+  padding:1px  2px !important;
+}
+
+td{
+  white-space: nowrap;
+  border: 0.1px solid #ccc;
+  padding: 4px 5px !important;
+  vertical-align: middle!important;
+  border-right: none;
+}
+
+/* td::before {
+  display: block;
+  float: left;
+  min-height: 40px;
+  content: "";
+} */
+
+td span{
+  width: 230px;
+}
+
+.posion{
+  white-space: normal;
+  width: 120px;
+}
+
+.allText{
+  width: 60px;
+  border-left: none;
+  padding:4px 5px 4px 0 !important;
+}
+
+.scroll{
+  width: 95%;
+}
+
+.profile{
+  width: 115px;
+  white-space: normal;
+}
+
+.fix{
+  width:35px;
+}
+
+.day{
+  width: 85px;
+  vertical-align: middle;
+}
+
+.honorific{
+  width: 30px;
+}
+
+.sex{
+  width: 40px;
+}
+
+.age{
+  width: 45px;
+}
+td.fix,td.honorific,td.sti_edit,td.sti_delete{
+  padding: 0!important;
+  margin:10px auto !important;
+  text-align: center;
+}
+input{
+  margin: 0!important;
+}
+.sti_edit,.sti_delete{
+  width:100px;
+  height: 55px;
+}
+
+.js-modal-open,.sti_delete a{
+  width: 80%;
+  height: 20px;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  padding: 0!important;
+}
+
+.over-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding:4px 0 4px 5px !important;
+}
+table {
+  table-layout: fixed;
+}
+
+.name,.comment {
+  width:320px;
+}
+.allText{
+  position: relative;
+}
+
+.fukidashi {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  white-space: normal;
+  border-radius: 20px;
+  padding: 16px;
+  top: 50px;
+  left: -325px;
+  width: 380px;
+  color: black;
+  font-weight: bold;
+  background: #ddd;
+  margin: 0 auto 40px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  border: 2px solid black;
+}
+.fukidashi::before {
+  position: absolute;
+  content: '';
+  top: -13px;
+  left: 8%;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background: #ddd;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+}
+
+.text:hover + .fukidashi {
+  display: block;
+}
+
+/* ##################################
+    レスポンシブ
+  ################################## */
+
+@media screen and (max-width: 782px) {
+
+  /* ##################################
+      隊員追加(レスポンシブ)
+    ################################## */
+
+  #name{
+    width:95%;
+  }
+
+  .control-group{
+    width: 100% !important;
+  }
+  #control-group-1{
+    width:95%;
+  }
+
+  #sti_1,#sti_2,#sti_3{
+    display: block;
+  }
+
+  #posion,#age,#sex,#sti_submit{
+    width:100%;
+  }
+
+  #sti_submit{
+    margin-top: 20px;
+  }
+
+  #control-group-7{
+    position: static;
+  }
+
+
+  #sti_submit{
+    position: static;
+    bottom:auto;
+  }
+
+  select{
+    min-width: 100%;
+  }
+
+  #posion_add,#posion_remove{
+    width: 80% !important;
+    min-width: auto;
+    max-width: none;
+  }
+
+
+  #coment{
+    max-width: none;
+    width: 100%;
+  }
+
+  .upload_image_button{
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #posion_add_button,#posion_remove_button{
+    width: 18.5%;
+    text-align: center;
+  }
+
+  #control-group-8,#control-group-9{
+    display: block;
+    position: relative;
+  }
+  #posion_add_button,#posion_remove_button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .ui-sortable-handle{
+    background-color: white;
+  }
+  /* ##################################
+      隊員状況(レスポンシブ)
+    ################################## */
+
+
+  .scroll {
+    overflow-x: auto;
+  }
+  .wp-list-table {
+    min-width: 640px;
+    margin: 0 10px 50px;
+  }
+  .wp-list-table td {
+    border-top: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+  }
+  .wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) {
+    display: table-cell;
+  }
+
+  td.fix,td.honorific,th.fix,th.honorific{
+    width: 40px!important;
+  }
+
+
+  .fukidashi::before {
+    left: 13%;
+
+  }
+
+  /* ##################################
+      モーダル(レスポンシブ)
+  ################################## */
+
+  #sti_0{
+    display: block;
+    width: 97.5%;
+    padding: 0;
+  }
+
+  #modal_image_button{
+    padding: 0;
+    width: 100%;
+  }
+
+  #modal_day,#modal_name{
+    width: 100%;
+  }
+
+  .modal-control-group{
+    margin: 0;
+    width: 100%!important;
+  }
+
+}
