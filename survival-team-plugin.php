@@ -27,3 +27,5 @@ $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__,
 	'sti_admin'
 );
+
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
