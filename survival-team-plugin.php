@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: サバイバルチームプラグイン
-Plugin URI: https://invisible.18-s.com/
+Plugin URI: https://miyakoshi.app/
 Description: サバイバルチームに必須のプラグイン！
-Version: 1.0.0
-Author: チームインビジブルのweb担当
-Author URI: https://invisible.18-s.com/
+Version: 0.8
+Author: 宮腰 悠希 (Yuki Miyakoshi)
+Author URI: https://miyakoshi.app/
 Tested up to: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -24,8 +24,8 @@ require_once ('lib/enqueue.php');
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/miyakoshi-yuki/survival-team-plugin/',
-	__FILE__,
-	'sti_admin'
+	STI_PLUGIN,
+	'survival-team-plugin'
 );
 
 $myUpdateChecker->getVcsApi()->enableReleaseAssets();
