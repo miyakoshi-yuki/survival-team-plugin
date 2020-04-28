@@ -20,3 +20,10 @@ require_once ('lib/StiScheduleClass.php');
 require_once ('lib/ajax.php');
 require_once ('lib/widget.php');
 require_once ('lib/enqueue.php');
+
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/miyakoshi-yuki/survival-team-plugin/',
+	__FILE__,
+	'survival-team-plugin'
+);
