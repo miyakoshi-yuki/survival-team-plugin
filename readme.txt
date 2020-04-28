@@ -46,10 +46,16 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 == Changelog ==
 
+= 0.9 =
+* test update 2.
+
 = 0.8 =
 * test update.
 
 == Upgrade Notice ==
+
+= 0.9 =
+test update 2
 
 = 0.8 =
 test update
