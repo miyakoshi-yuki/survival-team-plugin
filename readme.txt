@@ -46,6 +46,9 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 
 == Changelog ==
 
+= 0.9.1 =
+* license update beta
+
 = 0.9 =
 * test update 2.
 
@@ -53,6 +56,9 @@ directory take precedence. For example, `/assets/screenshot-1.png` would win ove
 * test update.
 
 == Upgrade Notice ==
+
+= 0.9.1 =
+license update beta
 
 = 0.9 =
 test update 2
