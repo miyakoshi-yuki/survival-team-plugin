@@ -25,5 +25,5 @@ require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/miyakoshi-yuki/survival-team-plugin/',
 	__FILE__,
-	'survival-team-plugin'
+	'sti_admin'
 );
