@@ -4,7 +4,7 @@ Plugin Name: サバイバルチームプラグイン
 Plugin URI: https://miyakoshi.app/
 Description: サバイバルチームに必須のプラグイン！
 Version: 0.9.1
-Author: 宮腰 悠希 (Yuki Miyakoshi)
+Author: 宮腰 悠希 ( Miyakoshi, Yuki )
 Author URI: https://miyakoshi.app/
 Tested up to: 5.4
 License: GPLv2 or later
